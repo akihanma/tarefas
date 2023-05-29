@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+  
+    <form id="add-task-form" class="add-task-form">
+      <input type="text" id="task-input" placeholder="Digite uma nova tarefa">
+      <button type="button" onclick="addTask()">Adicionar</button>
+    </form>
+  
+    <ul id="task-list" class="task-list">
+    </ul>
+    
+    <div class="task-summary">
+      <span id="pending-count">0</span> tarefas pendentes
+      <button id="clear-completed-btn" onclick="clearCompletedTasks()">Limpar Concluídas</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
